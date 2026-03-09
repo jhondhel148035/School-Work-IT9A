@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>UMindanao | Home</title>
+<style>
+
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif; }
+body { background: #f2f2f2; color:#333; line-height:1.5; }
+
+
+header.top-nav { background:#800000; color:white; height:60px; display:flex; align-items:center; justify-content:center; }
+.header-logo { display:flex; align-items:center; gap:15px; }
+.header-logo img { height:50px; }
+.header-logo span { font-size:1.5rem; font-weight:bold; }
+
+
+nav { background:#ff1937; }
+.nav-inner { width:90%; margin:auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; padding:10px 0; }
+.nav-links { display:flex; gap:15px; flex-wrap:wrap; }
+.nav-links a { color:white; text-decoration:none; font-weight:bold; padding:5px 10px; border-radius:4px; }
+.nav-links a:hover { background-color:#c91c2c; }
+.nav-search { display:flex; gap:5px; flex-wrap:wrap; }
+.nav-search input { padding:5px 10px; border:none; border-radius:3px; }
+.nav-search button { padding:5px 10px; background:#800000; color:white; border:none; border-radius:3px; cursor:pointer; }
+.nav-search button:hover { background:#5c0000; }
+
+
+.hero-img { width:100%; display:flex; justify-content:center; margin:20px 0; }
+.hero-img img { width:80%; max-height:400px; border-radius:8px; object-fit:cover; }
+
+
+main { width:90%; margin:20px auto; display:flex; gap:20px; flex-wrap:wrap; }
+.left, .center, .right { padding:15px; border-radius:6px; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+.left { width:30%; }
+.center { width:45%; }
+.right { width:25%; }
+.section-title { font-weight:bold; font-size:1.2rem; margin-bottom:10px; border-bottom:2px solid #ff1937; padding-bottom:5px; }
+article { margin-bottom:10px; padding:10px; border-radius:6px; background:#f7f7f7; box-shadow:0 1px 3px rgba(0,0,0,0.1); }
+
+
+footer.footer { background:#800000; height:80px; text-align:center; color:white; display:flex; align-items:center; justify-content:center; margin-top:20px; }
+
+
+@media(max-width: 900px){
+  main { flex-direction:column; }
+  .left, .center, .right { width:100%; }
+  .hero-img img { width:95%; }
+}
+</style>
+</head>
+<body>
+
+
+<header class="top-nav">
+  <div class="header-logo">
+    <img src="UM LOGO.jpeg" alt="UMTagum">
+    <span>University of Mindanao</span>
+  </div>
+</header>
+
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="governance.html">Governance</a>
+      <a href="board_of_trustees.html">Board of Trustees</a>
+      <a href="policies.html">Policies</a>
+      <a href="annual_report.html">Annual Report</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="campuses.html">Campuses</a>
+    </div>
+    <div class="nav-search">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-img">
+  <img src="um tagum pic.jpeg" alt="University Main Picture">
+</div>
+
+
+<main>
+ 
+  <section class="left">
+    <div class="section-title">Announcements</div>
+    <article>Someone stole a wallet in UM Tagum Arellano. We're looking for the culprit (IT student).</article>
+    <article>New scholarship programs aviailable</article>
+  </section>
+
+  
+  <section class="center">
+    <div class="section-title">News and Events</div>
+    <article>
+      <h1>UM Hosts Annual Research Conference</h1>
+      <p>The University of Mindanao successfully hosted its annual resefarch conference with participants from across Mindanao.</p>
+    </article>
+    <article>
+      <h1>New Online Learning Platform</h1>
+      <p>UM introduces new sets of challenghes</p>
+    </article>
+  </section>
+
+  
+  <section class="right">
+    <div class="section-title">Quick Links</div>
+    <article><a href="policies.html">View Policies</a></article>
+    <article><a href="annual_report.html">Annual Report</a></article>
+    <article><a href="colleges.html">Explore Colleges</a></article>
+  </section>
+</main>
+
+<footer class="footer">&copy; 2026 University of Mindanao. All rights reserved.</footer>
+</body>
+</html>
